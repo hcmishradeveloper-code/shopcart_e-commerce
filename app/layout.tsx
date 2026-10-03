@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Shopcart online store, your one stop shop of all your needs",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: {children:React.ReactNode}) {
   return (
     <ClerkProvider>
       <html lang="en" className={cn("font-sans", geist.variable)}>
